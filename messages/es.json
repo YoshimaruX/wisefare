@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "tagline": "Solo lo más barato, de todo el mundo.",
+    "titleHome": "Wisefare — Escanea el mundo, reserva desde el país más barato",
+    "descHome": "Para vuelos y hoteles, escaneamos precios de 47 países y mostramos el Top 10 más barato — con tu ahorro neto tras el VPN. La forma inteligente de viajar gastando menos."
+  },
+  "nav": {
+    "flights": "Vuelos",
+    "hotels": "Hoteles",
+    "vpn": "Comparar VPN",
+    "how": "Cómo funciona",
+    "premium": "Premium"
+  },
+  "banner": "Demo beta — los precios mostrados son de ejemplo. La versión pública se conecta a tarifas reales.",
+  "hero": {
+    "a": "El mismo viaje. ",
+    "b": "Reserva desde el país más barato",
+    "c": ".",
+    "sub": "Escaneamos precios de {n} países y mostramos solo el verdadero Top 10 más barato para tu ruta u hotel — con tu ahorro neto tras el VPN."
+  },
+  "form": {
+    "home": "Tu país (referencia)",
+    "country": "País",
+    "airport": "Aeropuerto",
+    "from": "Origen",
+    "to": "Destino",
+    "depart": "Salida",
+    "ret": "Regreso",
+    "pax": "Viajeros",
+    "city": "Ciudad",
+    "hotelName": "Nombre del hotel (opcional)",
+    "hotelPh": "p. ej., Hilton Paris Opera",
+    "cin": "Entrada",
+    "cout": "Salida",
+    "guests": "Huéspedes (1 hab.)",
+    "searchFlight": "Escanear el mundo y buscar lo más barato",
+    "searchHotel": "Escanear el mundo y buscar lo más barato",
+    "scanning": "Analizando…"
+  },
+  "scan": {
+    "title": "Escaneando precios VPN en {n} países…",
+    "found": "{n} países comprobados"
+  },
+  "result": {
+    "empty": "Introduce tu viaje: escaneamos el mundo y mostramos el Top 10 más barato y el mejor VPN.",
+    "eyebrowBest": "LO MÁS BARATO DEL MUNDO",
+    "roundTrip": "ida y vuelta",
+    "homeBest": "Tras escanear el mundo, {name} (tu país) ya es lo más barato para esta búsqueda. No necesitas VPN — te lo decimos con honestidad.",
+    "cheaper": "{amt} ({pct} %) más barato que {name}",
+    "scanned": "De {n} países escaneados, {name} es el más barato. Mostramos la diferencia frente a tu precio local.",
+    "btnSteps": "Pasos para reservar",
+    "btnRisk": "Riesgos y avisos",
+    "btnOpen": "Abrir sitio de reservas",
+    "recVpn": "VPN recomendado",
+    "perMo": "/1 mes",
+    "noVpn": "Esta vez no necesitas VPN.",
+    "netLabel": "Ahorro neto (tras el coste del VPN)",
+    "travelers": "{n} viajeros",
+    "nights": "{n} noches",
+    "guestsUnit": "{n} huésp./hab.",
+    "hotelIn": "Hotel en {name}"
+  },
+  "toast": {
+    "book": "Demo: los enlaces de reserva se añadirán en el lanzamiento.",
+    "aff": "Demo: los enlaces de afiliado se añadirán en el lanzamiento."
+  },
+  "top10": {
+    "title": "Top 10 más barato (escaneo mundial)",
+    "chipBest": "El más barato del mundo",
+    "chipHome": "Tu país",
+    "note": "Algunas rutas y fechas no muestran diferencia. Demo beta con precios de ejemplo — la versión final recalcula con datos reales."
+  },
+  "breakdown": {
+    "title": "Desglose del ahorro",
+    "home": "Precio en tu país ({name})",
+    "best": "Precio de {name} (el más barato)",
+    "diff": "Diferencia",
+    "vpn": "VPN de 1 mes más barato ({name})",
+    "net": "Ahorro neto",
+    "long": "¿Ya tienes un plan largo (p. ej., {name} {price}/mes)? Coste extra casi nulo → ahorras {amt}. Comisiones de tarjeta extranjera (≈1,6–2,2 %) no incluidas."
+  },
+  "vpn": {
+    "intro": "Comparativa de precios de los principales VPN para reservar viajes. Precios aproximados, junio de 2026 (varían con ofertas y cambio).",
+    "sortLong": "Plan largo más barato",
+    "sortSingle": "Mensual más barato",
+    "colLong": "Plan largo",
+    "colSingle": "Mensual",
+    "perMo": "/mes",
+    "countries": "{n} países",
+    "devUnl": "Dispositivos ilimitados",
+    "dev": "{n} dispositivos",
+    "refund": "Reembolso de 30 días",
+    "official": "Sitio oficial",
+    "tagLong": "Plan largo más barato",
+    "tagSingle": "Mensual conveniente",
+    "termSfs": "27 meses por adelantado",
+    "termPia": "26 meses por adelantado",
+    "termExp": "24 meses (oferta)",
+    "termNrd": "24+4 meses",
+    "termPtn": "24 meses por adelantado"
+  },
+  "how": {
+    "step1t": "1. Escanea el mundo",
+    "step1d": "Introduce tu viaje: obtenemos precios de {n} países y extraemos los 10 más baratos.",
+    "step2t": "2. Sugerimos el VPN más barato",
+    "step2d": "Entre los VPN que cubren el país más barato, elegimos automáticamente el de menor coste según tu uso, con el ahorro neto tras el VPN.",
+    "step3t": "3. Reservas tú mismo",
+    "step3d": "Sigue la guía: conecta el VPN y abre el sitio. La app nunca reserva ni cobra por ti — completas la reserva tú mismo.",
+    "posT": "Por qué los precios cambian según el país",
+    "posD": "Aerolíneas y OTA fijan precios por país de venta y por moneda. El poder adquisitivo, la competencia, el cambio y las promociones difieren, así que el mismo vuelo o habitación puede costar menos según la tienda nacional. En lugar de una lista fija, la app escanea el mundo cada vez para revelar el verdadero país más barato del momento.",
+    "faq": [
+      {
+        "q": "¿Es legal?",
+        "a": "Usar un VPN es legal en la mayoría de los países. Sin embargo, los términos de algunos sitios fijan reglas por región de venta, así que existe un pequeño riesgo contractual (cancelaciones raras). Esta app solo compara y presenta — la decisión final es tuya. Algunos destinos (p. ej., China) restringen los VPN."
+      },
+      {
+        "q": "¿Por qué un escaneo mundial y no una lista fija de 10?",
+        "a": "Porque el país más barato cambia según la ruta, el hotel y la fecha. El país de origen de la aerolínea (p. ej., Turquía para Turkish Airlines) puede ser el más barato, o Polonia o Vietnam pueden ganar de repente. Una lista fija los pierde; por eso escaneamos el mundo cada vez."
+      },
+      {
+        "q": "¿Siempre será más barato?",
+        "a": "No. Las diferencias rondan el 0–30 %; a veces la diferencia es cero, o tu propio país es el más barato. Cuando es pequeña, la app muestra con honestidad «tu país es el más barato»."
+      },
+      {
+        "q": "¿Cómo debería pagar?",
+        "a": "Los pagos extranjeros suelen añadir un 1,6–2,2 % de comisión; usa tarjetas multidivisa de bajas comisiones (Wise, Revolut…). Decide según el ahorro neto tras VPN y comisiones."
+      }
+    ]
+  },
+  "steps": {
+    "title": "Pasos para reservar (6)",
+    "s1t": "Contrata un VPN",
+    "s1d": "Para un solo viaje basta un mes (el más barato: {vName} {vPrice}). Si viajas dos o más veces al año, los planes largos ({lName} desde {lPrice}/mes) salen mejor. La mayoría ofrece reembolso de 30 días.",
+    "s2t": "Conéctate al país más barato",
+    "s2d": "Elige el país sugerido en la app del VPN y conéctate — unos 10 segundos.",
+    "s3t": "Abre el sitio en una ventana privada",
+    "s3d": "Las cookies antiguas pueden seguir mostrando tus precios locales. Usa una ventana de incógnito nueva.",
+    "s4t": "Ajusta país y moneda al local y verifica",
+    "s4d": "Revisa la configuración de país/moneda y compara siempre con tu precio local antes de decidir.",
+    "s5t": "Paga con una tarjeta de bajas comisiones",
+    "s5d": "Los pagos extranjeros suelen añadir un 1,6–2,2 %. Las tarjetas multidivisa (Wise, Revolut…) reducen la pérdida.",
+    "s6t": "Guarda confirmaciones y recibos",
+    "s6d": "El soporte puede corresponder al país de compra. Conserva tus comprobantes."
+  },
+  "risks": {
+    "title": "Riesgos y avisos",
+    "r1t": "Términos de los sitios",
+    "r1d": "Algunas aerolíneas y OTA aplican reglas tarifarias según la región de venta; en casos raros pueden revisarse tarifas o cancelarse reservas (sobre todo vuelos). La decisión final es tuya.",
+    "r2t": "Comisiones de pago y cambio",
+    "r2d": "Los pagos en moneda local llevan comisiones (≈1,6–2,2 %) más el margen de cambio. Con diferencias pequeñas el resultado puede invertirse. Nuestro «ahorro neto» ya descuenta el VPN.",
+    "r3t": "Cancelaciones y reembolsos",
+    "r3d": "Los reembolsos llegan en moneda local, así que el cambio puede reducirlos. Mejor tarifas flexibles.",
+    "r4t": "Atención al cliente",
+    "r4d": "Puede atenderte el soporte del país de compra (idioma y horarios).",
+    "honest": "Cuando la diferencia es pequeña, reserva desde tu país. En ese caso la app lo dirá: «tu país es el más barato»."
+  },
+  "premium": {
+    "eyebrow": "WISEFARE PREMIUM",
+    "title": "Una pequeña ventaja para el viajero astuto.",
+    "sub": "Las funciones básicas son siempre gratis. Para quienes buscan la mejor oferta, una forma de vigilar los precios.",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "perMonth": "/mes",
+    "perYear": "/año",
+    "save": "2 meses gratis",
+    "cta": "Empezar Premium",
+    "processing": "Procesando…",
+    "featPriceAlerts": "Alertas de precio — recibe aviso cuando una ruta baje de tu objetivo",
+    "featAutoScan": "Escaneo automático — tus viajes guardados se reanalizan a diario",
+    "featPriceHistory": "Historial de precios — observa cómo cambió el país más barato",
+    "featNoAds": "Una experiencia rápida y sin anuncios",
+    "note": "Cancela cuando quieras. Pagos gestionados de forma segura por Stripe.",
+    "unavailable": "El pago se está configurando y se activará en el lanzamiento."
+  },
+  "footer": {
+    "disclaimer": "Wisefare β (demo) — esta app solo compara y presenta información de precios y enlaza a sitios externos; nunca reserva ni procesa pagos. Los precios son de ejemplo y los del VPN, aproximados. Revisa los términos de cada sitio y úsala bajo tu propio criterio.",
+    "privacy": "Privacidad",
+    "terms": "Aviso legal",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "close": "Cerrar",
+    "backHome": "Volver al inicio"
+  },
+  "legal": {
+    "privacyTitle": "Política de privacidad",
+    "privacyUpdated": "Última actualización: junio de 2026",
+    "privacyIntro": "Esta política explica cómo Wisefare (el «Servicio») trata tu información. El Servicio compara y presenta información de precios y enlaza a sitios externos; no reserva viajes ni procesa pagos de viajes por sí mismo.",
+    "privacySections": [
+      {
+        "h": "1. Información que recopilamos",
+        "b": "Podemos recopilar tus criterios de búsqueda (origen, destino, fechas), idioma, información del dispositivo/navegador y registros de acceso. Si usas Premium, tu correo y datos similares se procesan mediante nuestro procesador de pagos (Stripe); nunca almacenamos datos de pago sensibles como el número completo de tarjeta."
+      },
+      {
+        "h": "2. Cómo usamos la información",
+        "b": "La usamos para mostrar comparaciones de precios, mejorar el Servicio, prevenir abusos y proporcionar y facturar las funciones Premium."
+      },
+      {
+        "h": "3. Terceros y servicios externos",
+        "b": "Usamos pago (Stripe), analítica y programas de afiliación de VPN/viajes. Seguir un enlace de afiliado puede compartir información de referencia con el socio. No vendemos tu información personal a terceros sin consentimiento, salvo obligación legal."
+      },
+      {
+        "h": "4. Cookies",
+        "b": "Podemos usar cookies para usabilidad, analítica y seguimiento de afiliación. Puedes desactivarlas en tu navegador, aunque algunas funciones podrían dejar de funcionar."
+      },
+      {
+        "h": "5. Almacenamiento y seguridad",
+        "b": "Tratamos la información con medidas de protección adecuadas. No obstante, ninguna transmisión por Internet puede garantizarse totalmente segura."
+      },
+      {
+        "h": "6. Tus derechos",
+        "b": "Puedes solicitar el acceso, la rectificación o la eliminación de tu información a través de los datos de contacto siguientes."
+      },
+      {
+        "h": "7. Cambios",
+        "b": "Esta política puede actualizarse sin previo aviso. Los cambios importantes se anunciarán en el sitio."
+      },
+      {
+        "h": "8. Contacto",
+        "b": "Para preguntas sobre esta política, usa los datos de contacto del pie de página."
+      }
+    ],
+    "termsTitle": "Términos y aviso legal",
+    "termsIntro": "Esta página divulga los términos clave relativos al plan de pago del Servicio (Wisefare Premium).",
+    "termsRows": [
+      {
+        "k": "Proveedor",
+        "v": "(Indica tu razón social)"
+      },
+      {
+        "k": "Responsable",
+        "v": "(Indica el nombre del responsable)"
+      },
+      {
+        "k": "Dirección",
+        "v": "(Se comunica sin demora a petición, o indica tu dirección)"
+      },
+      {
+        "k": "Contacto",
+        "v": "El correo electrónico siguiente (número de teléfono comunicado sin demora a petición)"
+      },
+      {
+        "k": "Precio",
+        "v": "El importe mostrado en la pantalla de pago para cada plan (mensual / anual), impuestos incluidos cuando corresponda."
+      },
+      {
+        "k": "Costes adicionales",
+        "v": "Los gastos de Internet y datos corren por cuenta del cliente."
+      },
+      {
+        "k": "Métodos de pago",
+        "v": "Tarjeta de crédito y similares (procesador: Stripe)."
+      },
+      {
+        "k": "Facturación",
+        "v": "Los planes mensuales se cobran cada mes; los anuales cada año, al completar la compra. Las suscripciones se renuevan automáticamente."
+      },
+      {
+        "k": "Entrega",
+        "v": "El acceso se concede inmediatamente tras el pago correcto."
+      },
+      {
+        "k": "Cancelación",
+        "v": "Cancelable en cualquier momento; la facturación se detiene desde la siguiente renovación. Dada la naturaleza digital del Servicio, los importes ya pagados del periodo actual no son reembolsables por lo general."
+      },
+      {
+        "k": "Requisitos",
+        "v": "Se recomienda un navegador web moderno."
+      }
+    ],
+    "termsNote": "Nota: sustituye los elementos entre paréntesis por tus propios datos antes del lanzamiento."
+  }
+}

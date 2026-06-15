@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "tagline": "Only the cheapest, from the whole world.",
+    "titleHome": "Wisefare — Scan the world, book from the cheapest country",
+    "descHome": "For flights and hotels, we scan store prices across 47 countries and show the Top 10 cheapest — plus your net savings after VPN costs. The smart way to travel for less."
+  },
+  "nav": {
+    "flights": "Flights",
+    "hotels": "Hotels",
+    "vpn": "VPN deals",
+    "how": "How it works",
+    "premium": "Premium"
+  },
+  "banner": "Beta demo — prices shown are samples. The public version connects to live fare & hotel data.",
+  "hero": {
+    "a": "Same trip. ",
+    "b": "Book from the cheapest country",
+    "c": ".",
+    "sub": "We scan store prices across {n} countries and show only the real Top 10 cheapest for your route or hotel — with your net savings after VPN costs."
+  },
+  "form": {
+    "home": "Your country (baseline)",
+    "country": "Country",
+    "airport": "Airport",
+    "from": "From",
+    "to": "To",
+    "depart": "Departure",
+    "ret": "Return",
+    "pax": "Travelers",
+    "city": "City",
+    "hotelName": "Hotel name (optional)",
+    "hotelPh": "e.g. Hilton Paris Opera",
+    "cin": "Check-in",
+    "cout": "Check-out",
+    "guests": "Guests (1 room)",
+    "searchFlight": "Scan the world for the cheapest",
+    "searchHotel": "Scan the world for the cheapest",
+    "scanning": "Scanning…"
+  },
+  "scan": {
+    "title": "Scanning VPN prices across {n} countries…",
+    "found": "{n} countries checked"
+  },
+  "result": {
+    "empty": "Enter your trip and we scan the world, then show the Top 10 cheapest and the best VPN suggestion.",
+    "eyebrowBest": "WORLD'S CHEAPEST",
+    "roundTrip": "round trip",
+    "homeBest": "After scanning the world, {name} (your country) is already the cheapest for this search. No VPN needed — we tell you honestly.",
+    "cheaper": "{amt} ({pct}%) cheaper than {name}",
+    "scanned": "Out of {n} countries scanned, {name} is cheapest. Showing the gap vs your home price.",
+    "btnSteps": "Booking steps",
+    "btnRisk": "Risks & caveats",
+    "btnOpen": "Open booking site",
+    "recVpn": "Recommended VPN",
+    "perMo": "/1 mo",
+    "noVpn": "No VPN needed this time.",
+    "netLabel": "Net savings (after VPN cost)",
+    "travelers": "{n} travelers",
+    "nights": "{n} nights",
+    "guestsUnit": "{n} guests/room",
+    "hotelIn": "Hotel in {name}"
+  },
+  "toast": {
+    "book": "Demo: outbound booking links are added at launch.",
+    "aff": "Demo: affiliate links are added at launch."
+  },
+  "top10": {
+    "title": "Top 10 cheapest (world scan)",
+    "chipBest": "World's cheapest",
+    "chipHome": "Your country",
+    "note": "Some routes and dates show no difference. Beta demo uses sample prices — the live version recalculates with real data."
+  },
+  "breakdown": {
+    "title": "Savings breakdown",
+    "home": "Your home store price ({name})",
+    "best": "{name} store price (cheapest)",
+    "diff": "Difference",
+    "vpn": "Cheapest 1-month VPN ({name})",
+    "net": "Net savings",
+    "long": "Already on a long-term plan (e.g. {name} {price}/mo)? Near-zero extra cost → save {amt}. Foreign-card fees (≈1.6–2.2%) not included."
+  },
+  "vpn": {
+    "intro": "Price comparison of major VPNs for travel booking. Approx. prices as of June 2026 (vary with sales & FX).",
+    "sortLong": "Cheapest long-term",
+    "sortSingle": "Cheapest monthly",
+    "colLong": "Long-term",
+    "colSingle": "Monthly",
+    "perMo": "/mo",
+    "countries": "{n} countries",
+    "devUnl": "Unlimited devices",
+    "dev": "{n} devices",
+    "refund": "30-day money-back",
+    "official": "Official site",
+    "tagLong": "Cheapest long-term",
+    "tagSingle": "Best monthly value",
+    "termSfs": "27-mo upfront",
+    "termPia": "26-mo upfront",
+    "termExp": "24-mo (sale)",
+    "termNrd": "24+4 mo",
+    "termPtn": "24-mo upfront"
+  },
+  "how": {
+    "step1t": "1. Scan the world",
+    "step1d": "Enter your trip and we pull store prices across {n} countries, then extract the 10 cheapest.",
+    "step2t": "2. Cheapest VPN suggested",
+    "step2d": "Among VPNs covering the cheapest country, we auto-pick the lowest cost for your usage (monthly or long-term) and compute net savings after VPN cost.",
+    "step3t": "3. You book it yourself",
+    "step3d": "Follow the step guide: connect the VPN, then open the booking site. The app never books or charges for you — you complete the booking yourself.",
+    "posT": "Why prices differ by country",
+    "posD": "Airlines and OTAs set prices per sales country and currency (point-of-sale pricing). Purchasing power, competition, FX rates and promotions differ, so the same flight or room can cost less depending on which country's store you buy from. Instead of a fixed list, this app scans the world every time, so you see the real cheapest country for that moment.",
+    "faq": [
+      {
+        "q": "Is this legal?",
+        "a": "Using a VPN is legal in most countries. However, some booking sites' terms set rules based on sales region, so a small contractual risk (e.g. rare booking cancellation) is not zero. This app only compares and presents information — the final booking decision is yours. Note that some destinations (e.g. China) restrict VPNs themselves."
+      },
+      {
+        "q": "Why a world scan instead of a fixed list of 10?",
+        "a": "Because the cheapest country changes by route, hotel and date. The airline's home country (e.g. Turkey for Turkish Airlines) can be cheapest, or Poland or Vietnam can suddenly win. A fixed list misses these, so we scan the world each time and show the Top 10."
+      },
+      {
+        "q": "Will it always be cheaper?",
+        "a": "No. Gaps are roughly 0–30%; on some routes and dates the gap is zero, or your own country is cheapest. When the gap is small, this app honestly shows 'your country is cheapest'."
+      },
+      {
+        "q": "How should I pay?",
+        "a": "Foreign-issued payments typically add a 1.6–2.2% fee, so low-FX-fee multi-currency cards (Wise, Revolut, etc.) are recommended. Judge by the net savings after VPN cost and fees."
+      }
+    ]
+  },
+  "steps": {
+    "title": "Booking steps (6)",
+    "s1t": "Subscribe to a VPN",
+    "s1d": "For a one-off trip, a single month works (cheapest: {vName} {vPrice}). If you travel twice a year or more, long-term plans ({lName} from {lPrice}/mo) are better value. Most offer a 30-day money-back guarantee.",
+    "s2t": "Connect to a server in the cheapest country",
+    "s2d": "Pick the suggested country in your VPN app and connect — about 10 seconds.",
+    "s3t": "Open the booking site in a private window",
+    "s3d": "Old cookies can keep showing your home prices. Use a fresh incognito/private window.",
+    "s4t": "Set country & currency to local, then verify",
+    "s4d": "Check the site's country/currency setting and always compare against your home price before deciding.",
+    "s5t": "Pay with a low-FX-fee card",
+    "s5d": "Foreign-issued payments usually add 1.6–2.2%. Multi-currency cards like Wise or Revolut reduce the loss.",
+    "s6t": "Save confirmation emails and receipts",
+    "s6d": "Customer support may be routed to the country you booked in. Keep your records."
+  },
+  "risks": {
+    "title": "Risks & caveats",
+    "r1t": "Booking-site terms",
+    "r1d": "Some airlines and OTAs apply fare rules based on the sales region; in rare cases fares can be re-checked or bookings cancelled (especially flights). The final decision is yours.",
+    "r2t": "Payment fees & FX",
+    "r2d": "Local-currency payments carry foreign fees (≈1.6–2.2%) plus FX spread. On small gaps this can flip the result. Our 'net savings' already deducts the VPN cost.",
+    "r3t": "Cancellations & refunds",
+    "r3d": "Refunds come in the local currency, so FX moves can shrink them. Flexible fares/plans are safer.",
+    "r4t": "Support desk",
+    "r4d": "You may be routed to customer support in the country of purchase (language and hours).",
+    "honest": "When the gap is small, just book from your own country. In that case the app will say so: 'your country is cheapest'."
+  },
+  "premium": {
+    "eyebrow": "WISEFARE PREMIUM",
+    "title": "A little edge for the smart traveler.",
+    "sub": "Core features are always free. For those chasing the best deal, a way to keep watch on prices.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "perMonth": "/mo",
+    "perYear": "/yr",
+    "save": "2 months free",
+    "cta": "Start Premium",
+    "processing": "Processing…",
+    "featPriceAlerts": "Price alerts — get notified when a route drops below your target",
+    "featAutoScan": "Auto-scan — your saved trips re-scanned daily, automatically",
+    "featPriceHistory": "Price history — see how the cheapest country shifted over time",
+    "featNoAds": "A fast, ad-free experience",
+    "note": "Cancel anytime. Payments are securely handled by Stripe.",
+    "unavailable": "Checkout is being set up and will be enabled at launch."
+  },
+  "footer": {
+    "disclaimer": "Wisefare β (demo) — this app only compares and presents price information and links to external sites; it never books or processes payments. Prices are sample data and VPN prices are approximate. Review each booking site's terms and fare rules and use at your own discretion.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "close": "Close",
+    "backHome": "Back to home"
+  },
+  "legal": {
+    "privacyTitle": "Privacy Policy",
+    "privacyUpdated": "Last updated: June 2026",
+    "privacyIntro": "This policy explains how Wisefare (the \"Service\") handles your information. The Service compares and presents price information and links to external sites; it does not itself book travel or process travel payments.",
+    "privacySections": [
+      {
+        "h": "1. Information we collect",
+        "b": "We may collect search inputs (origin, destination, dates), language preference, device/browser information and access logs. If you use Premium, your email and similar details are processed via our payment processor (Stripe); we never store sensitive payment data such as full card numbers."
+      },
+      {
+        "h": "2. How we use information",
+        "b": "We use information to display price-comparison results, improve the Service, prevent abuse, and provide and bill Premium features."
+      },
+      {
+        "h": "3. Third parties & external services",
+        "b": "We use payment (Stripe), analytics, and VPN/travel affiliate programs. Following an affiliate link may share referral information with the partner. We do not sell your personal information to third parties without consent except as required by law."
+      },
+      {
+        "h": "4. Cookies",
+        "b": "We may use cookies for usability, analytics and affiliate tracking. You can disable cookies in your browser, though some features may stop working."
+      },
+      {
+        "h": "5. Data storage & security",
+        "b": "We handle collected information with appropriate safeguards. However, no internet transmission can be guaranteed perfectly secure."
+      },
+      {
+        "h": "6. Your rights",
+        "b": "You may request disclosure, correction or deletion of your information. Please contact us using the details below."
+      },
+      {
+        "h": "7. Changes",
+        "b": "This policy may be updated without prior notice. Material changes will be announced on the site."
+      },
+      {
+        "h": "8. Contact",
+        "b": "For questions about this policy, please use the contact details in the footer."
+      }
+    ],
+    "termsTitle": "Terms & Commercial Disclosure",
+    "termsIntro": "This page discloses key terms relating to the Service's paid plan (Wisefare Premium).",
+    "termsRows": [
+      {
+        "k": "Provider",
+        "v": "(Enter your business / legal name)"
+      },
+      {
+        "k": "Responsible manager",
+        "v": "(Enter the responsible person's name)"
+      },
+      {
+        "k": "Address",
+        "v": "(Disclosed without delay upon request, or enter your address)"
+      },
+      {
+        "k": "Contact",
+        "v": "The contact email below (phone number disclosed without delay upon request)"
+      },
+      {
+        "k": "Price",
+        "v": "The amount shown on the checkout screen for each plan (monthly / yearly), tax included where applicable."
+      },
+      {
+        "k": "Additional fees",
+        "v": "Internet and data charges are the customer's responsibility."
+      },
+      {
+        "k": "Payment methods",
+        "v": "Credit card and similar (processor: Stripe)."
+      },
+      {
+        "k": "Billing timing",
+        "v": "Monthly plans are billed each month; yearly plans each year, at completion of purchase. Subscriptions renew automatically."
+      },
+      {
+        "k": "Service delivery",
+        "v": "Access is granted immediately after successful payment."
+      },
+      {
+        "k": "Cancellation",
+        "v": "You may cancel anytime; billing stops from the next renewal date. Given the digital nature of the Service, fees already paid for the current period are generally non-refundable."
+      },
+      {
+        "k": "Requirements",
+        "v": "A modern web browser is recommended."
+      }
+    ],
+    "termsNote": "Note: replace the bracketed items with your own details before launch. Disclosing address and phone number \"without delay upon request\" is a legally accepted option in Japan."
+  }
+}

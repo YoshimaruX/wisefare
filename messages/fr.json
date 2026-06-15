@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "tagline": "Seulement le moins cher, du monde entier.",
+    "titleHome": "Wisefare — Scannez le monde, réservez depuis le pays le moins cher",
+    "descHome": "Pour les vols et les hôtels, nous scannons les prix de 47 pays et affichons le Top 10 le moins cher — avec votre économie nette après le VPN. La façon maligne de voyager pour moins cher."
+  },
+  "nav": {
+    "flights": "Vols",
+    "hotels": "Hôtels",
+    "vpn": "Comparatif VPN",
+    "how": "Fonctionnement",
+    "premium": "Premium"
+  },
+  "banner": "Démo bêta — les prix affichés sont des exemples. La version publique se connecte aux tarifs réels.",
+  "hero": {
+    "a": "Même voyage. ",
+    "b": "Réservez depuis le pays le moins cher",
+    "c": ".",
+    "sub": "Nous scannons les prix de {n} pays et n'affichons que le vrai Top 10 le moins cher pour votre trajet ou hôtel — économie nette après VPN incluse."
+  },
+  "form": {
+    "home": "Votre pays (référence)",
+    "country": "Pays",
+    "airport": "Aéroport",
+    "from": "Départ",
+    "to": "Destination",
+    "depart": "Aller",
+    "ret": "Retour",
+    "pax": "Voyageurs",
+    "city": "Ville",
+    "hotelName": "Nom de l'hôtel (facultatif)",
+    "hotelPh": "ex. Hilton Paris Opéra",
+    "cin": "Arrivée",
+    "cout": "Départ",
+    "guests": "Personnes (1 ch.)",
+    "searchFlight": "Scanner le monde pour le moins cher",
+    "searchHotel": "Scanner le monde pour le moins cher",
+    "scanning": "Analyse…"
+  },
+  "scan": {
+    "title": "Analyse des prix VPN dans {n} pays…",
+    "found": "{n} pays vérifiés"
+  },
+  "result": {
+    "empty": "Saisissez votre voyage : nous scannons le monde puis affichons le Top 10 le moins cher et le meilleur VPN.",
+    "eyebrowBest": "LE MOINS CHER AU MONDE",
+    "roundTrip": "aller-retour",
+    "homeBest": "Après analyse du monde entier, {name} (votre pays) est déjà le moins cher pour cette recherche. Pas besoin de VPN — on vous le dit honnêtement.",
+    "cheaper": "{amt} ({pct} %) de moins que {name}",
+    "scanned": "Sur {n} pays analysés, {name} est le moins cher. Écart affiché par rapport à votre prix local.",
+    "btnSteps": "Étapes de réservation",
+    "btnRisk": "Risques et précautions",
+    "btnOpen": "Ouvrir le site",
+    "recVpn": "VPN recommandé",
+    "perMo": "/1 mois",
+    "noVpn": "Pas de VPN nécessaire cette fois.",
+    "netLabel": "Économie nette (après coût du VPN)",
+    "travelers": "{n} voyageurs",
+    "nights": "{n} nuits",
+    "guestsUnit": "{n} pers./ch.",
+    "hotelIn": "Hôtel à {name}"
+  },
+  "toast": {
+    "book": "Démo : les liens de réservation seront ajoutés au lancement.",
+    "aff": "Démo : les liens d'affiliation seront ajoutés au lancement."
+  },
+  "top10": {
+    "title": "Top 10 le moins cher (analyse mondiale)",
+    "chipBest": "Le moins cher au monde",
+    "chipHome": "Votre pays",
+    "note": "Certaines routes ou dates n'affichent aucun écart. Démo bêta avec prix d'exemple — la version finale recalcule avec des données réelles."
+  },
+  "breakdown": {
+    "title": "Détail des économies",
+    "home": "Prix dans votre pays ({name})",
+    "best": "Prix {name} (le moins cher)",
+    "diff": "Écart",
+    "vpn": "VPN 1 mois le moins cher ({name})",
+    "net": "Économie nette",
+    "long": "Déjà abonné longue durée (ex. {name} {price}/mois) ? Surcoût quasi nul → {amt} d'économie. Frais de carte étrangère (≈1,6–2,2 %) non inclus."
+  },
+  "vpn": {
+    "intro": "Comparatif des principaux VPN pour réserver ses voyages. Prix approximatifs, juin 2026 (variables selon promos et change).",
+    "sortLong": "Longue durée la moins chère",
+    "sortSingle": "Mensuel le moins cher",
+    "colLong": "Longue durée",
+    "colSingle": "Mensuel",
+    "perMo": "/mois",
+    "countries": "{n} pays",
+    "devUnl": "Appareils illimités",
+    "dev": "{n} appareils",
+    "refund": "Remboursement 30 j",
+    "official": "Site officiel",
+    "tagLong": "Longue durée la moins chère",
+    "tagSingle": "Mensuel avantageux",
+    "termSfs": "27 mois d'avance",
+    "termPia": "26 mois d'avance",
+    "termExp": "24 mois (promo)",
+    "termNrd": "24+4 mois",
+    "termPtn": "24 mois d'avance"
+  },
+  "how": {
+    "step1t": "1. Scanner le monde",
+    "step1d": "Saisissez votre voyage : nous récupérons les prix de {n} pays, puis extrayons les 10 moins chers.",
+    "step2t": "2. VPN le moins cher proposé",
+    "step2d": "Parmi les VPN couvrant le pays le moins cher, nous choisissons automatiquement le plus économique selon votre usage, avec l'économie nette après coût du VPN.",
+    "step3t": "3. Vous réservez vous-même",
+    "step3d": "Suivez le guide : connexion VPN, puis ouverture du site. L'appli ne réserve ni n'encaisse jamais à votre place.",
+    "posT": "Pourquoi les prix varient selon les pays",
+    "posD": "Compagnies aériennes et OTA fixent leurs prix par pays de vente et par devise. Pouvoir d'achat, concurrence, change et promotions diffèrent : le même vol ou la même chambre peut coûter moins cher selon la boutique nationale. Plutôt qu'une liste figée, l'appli scanne le monde à chaque fois pour révéler le vrai pays le moins cher du moment.",
+    "faq": [
+      {
+        "q": "Est-ce légal ?",
+        "a": "L'usage d'un VPN est légal dans la plupart des pays. Toutefois, certaines conditions de sites fixent des règles selon la région de vente : un risque contractuel limité (rares annulations) n'est pas nul. Cette appli ne fait que comparer et présenter — la décision finale vous appartient. Certaines destinations (ex. Chine) restreignent les VPN."
+      },
+      {
+        "q": "Pourquoi un scan mondial plutôt qu'une liste fixe de 10 ?",
+        "a": "Parce que le pays le moins cher change selon le trajet, l'hôtel et la date. Le pays d'origine de la compagnie (ex. Turquie pour Turkish Airlines) peut être le moins cher, ou la Pologne ou le Viêt Nam peut soudainement gagner. Une liste figée les manque ; nous scannons donc le monde à chaque fois."
+      },
+      {
+        "q": "Est-ce toujours moins cher ?",
+        "a": "Non. Les écarts vont d'environ 0 à 30 % ; parfois l'écart est nul, voire votre pays est le moins cher. Quand l'écart est faible, l'appli affiche honnêtement « votre pays est le moins cher »."
+      },
+      {
+        "q": "Comment payer ?",
+        "a": "Les paiements étrangers ajoutent en général 1,6 à 2,2 % de frais : privilégiez des cartes multidevises à faibles frais (Wise, Revolut…). Jugez sur l'économie nette après VPN et frais."
+      }
+    ]
+  },
+  "steps": {
+    "title": "Étapes de réservation (6)",
+    "s1t": "Souscrire un VPN",
+    "s1d": "Pour un seul voyage, un mois suffit (le moins cher : {vName} {vPrice}). Si vous voyagez deux fois par an ou plus, la longue durée ({lName} dès {lPrice}/mois) est plus rentable. Remboursement 30 jours le plus souvent.",
+    "s2t": "Se connecter au pays le moins cher",
+    "s2d": "Choisissez le pays proposé dans l'appli VPN et connectez-vous — une dizaine de secondes.",
+    "s3t": "Ouvrir le site en navigation privée",
+    "s3d": "Les anciens cookies peuvent maintenir vos prix locaux. Utilisez une fenêtre privée neuve.",
+    "s4t": "Régler pays et devise sur le local, puis vérifier",
+    "s4d": "Contrôlez le réglage pays/devise et comparez toujours avec votre prix local avant de décider.",
+    "s5t": "Payer avec une carte à faibles frais",
+    "s5d": "Les paiements étrangers ajoutent en général 1,6–2,2 %. Les cartes multidevises (Wise, Revolut…) limitent la perte.",
+    "s6t": "Conserver confirmations et reçus",
+    "s6d": "Le support peut dépendre du pays d'achat. Gardez vos justificatifs."
+  },
+  "risks": {
+    "title": "Risques et précautions",
+    "r1t": "Conditions des sites",
+    "r1d": "Certaines compagnies et OTA appliquent des règles tarifaires selon la région de vente ; rarement, des tarifs peuvent être revérifiés ou des réservations annulées (surtout les vols). La décision finale vous appartient.",
+    "r2t": "Frais de paiement et change",
+    "r2d": "Les paiements en devise locale subissent des frais (≈1,6–2,2 %) plus l'écart de change. Sur de petits écarts, le résultat peut s'inverser. Notre « économie nette » déduit déjà le VPN.",
+    "r3t": "Annulations et remboursements",
+    "r3d": "Les remboursements arrivent en devise locale : le change peut les réduire. Préférez des tarifs flexibles.",
+    "r4t": "Service client",
+    "r4d": "Vous pouvez être dirigé vers le support du pays d'achat (langue et horaires).",
+    "honest": "Quand l'écart est faible, réservez depuis votre pays. L'appli l'affiche alors : « votre pays est le moins cher »."
+  },
+  "premium": {
+    "eyebrow": "WISEFARE PREMIUM",
+    "title": "Un petit avantage pour le voyageur malin.",
+    "sub": "Les fonctions de base sont toujours gratuites. Pour ceux qui visent la meilleure affaire, un moyen de surveiller les prix.",
+    "monthly": "Mensuel",
+    "yearly": "Annuel",
+    "perMonth": "/mois",
+    "perYear": "/an",
+    "save": "2 mois offerts",
+    "cta": "Commencer Premium",
+    "processing": "Traitement…",
+    "featPriceAlerts": "Alertes de prix — soyez averti quand un trajet passe sous votre seuil",
+    "featAutoScan": "Analyse auto — vos voyages enregistrés réanalysés chaque jour",
+    "featPriceHistory": "Historique des prix — voyez l'évolution du pays le moins cher",
+    "featNoAds": "Une expérience rapide et sans publicité",
+    "note": "Annulable à tout moment. Paiements gérés en toute sécurité par Stripe.",
+    "unavailable": "Le paiement est en préparation et sera activé au lancement."
+  },
+  "footer": {
+    "disclaimer": "Wisefare β (démo) — cette appli compare et présente des informations de prix et renvoie vers des sites externes ; elle ne réserve ni n'encaisse jamais. Prix d'exemple, tarifs VPN approximatifs. Consultez les conditions de chaque site et utilisez l'appli à votre discrétion.",
+    "privacy": "Confidentialité",
+    "terms": "Mentions légales",
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  },
+  "common": {
+    "close": "Fermer",
+    "backHome": "Retour à l'accueil"
+  },
+  "legal": {
+    "privacyTitle": "Politique de confidentialité",
+    "privacyUpdated": "Dernière mise à jour : juin 2026",
+    "privacyIntro": "Cette politique explique comment Wisefare (le « Service ») traite vos informations. Le Service compare et présente des informations de prix et renvoie vers des sites externes ; il ne réserve pas de voyages et ne traite pas les paiements de voyage lui-même.",
+    "privacySections": [
+      {
+        "h": "1. Informations collectées",
+        "b": "Nous pouvons collecter vos critères de recherche (départ, destination, dates), votre langue, des informations sur votre appareil/navigateur et des journaux d'accès. Pour Premium, votre e-mail et données similaires sont traités via notre prestataire de paiement (Stripe) ; nous ne stockons jamais de données de paiement sensibles comme le numéro de carte complet."
+      },
+      {
+        "h": "2. Utilisation des informations",
+        "b": "Nous les utilisons pour afficher les comparaisons de prix, améliorer le Service, prévenir les abus, et fournir et facturer les fonctions Premium."
+      },
+      {
+        "h": "3. Tiers et services externes",
+        "b": "Nous utilisons le paiement (Stripe), l'analyse d'audience et des programmes d'affiliation VPN/voyage. Suivre un lien d'affiliation peut transmettre des informations de référence au partenaire. Nous ne vendons pas vos données personnelles à des tiers sans consentement, sauf obligation légale."
+      },
+      {
+        "h": "4. Cookies",
+        "b": "Nous pouvons utiliser des cookies pour l'ergonomie, l'analyse et le suivi d'affiliation. Vous pouvez les désactiver dans votre navigateur, au risque de perdre certaines fonctions."
+      },
+      {
+        "h": "5. Conservation et sécurité",
+        "b": "Nous traitons les informations avec des mesures de protection appropriées. Toutefois, aucune transmission sur Internet ne peut être garantie parfaitement sûre."
+      },
+      {
+        "h": "6. Vos droits",
+        "b": "Vous pouvez demander l'accès, la rectification ou la suppression de vos informations via les coordonnées ci-dessous."
+      },
+      {
+        "h": "7. Modifications",
+        "b": "Cette politique peut être modifiée sans préavis. Les changements importants seront annoncés sur le site."
+      },
+      {
+        "h": "8. Contact",
+        "b": "Pour toute question, utilisez les coordonnées indiquées dans le pied de page."
+      }
+    ],
+    "termsTitle": "Conditions et mentions légales",
+    "termsIntro": "Cette page divulgue les conditions clés relatives à l'offre payante du Service (Wisefare Premium).",
+    "termsRows": [
+      {
+        "k": "Prestataire",
+        "v": "(Indiquez votre raison sociale)"
+      },
+      {
+        "k": "Responsable",
+        "v": "(Indiquez le nom du responsable)"
+      },
+      {
+        "k": "Adresse",
+        "v": "(Communiquée sans délai sur demande, ou indiquez votre adresse)"
+      },
+      {
+        "k": "Contact",
+        "v": "L'e-mail ci-dessous (numéro de téléphone communiqué sans délai sur demande)"
+      },
+      {
+        "k": "Prix",
+        "v": "Le montant affiché à l'écran de paiement pour chaque offre (mensuelle / annuelle), taxes comprises le cas échéant."
+      },
+      {
+        "k": "Frais supplémentaires",
+        "v": "Les frais d'Internet et de données sont à la charge du client."
+      },
+      {
+        "k": "Moyens de paiement",
+        "v": "Carte bancaire et similaires (prestataire : Stripe)."
+      },
+      {
+        "k": "Facturation",
+        "v": "Les offres mensuelles sont facturées chaque mois ; les annuelles chaque année, à la finalisation de l'achat. Les abonnements se renouvellent automatiquement."
+      },
+      {
+        "k": "Fourniture",
+        "v": "L'accès est accordé immédiatement après le paiement réussi."
+      },
+      {
+        "k": "Résiliation",
+        "v": "Résiliable à tout moment ; la facturation cesse à la prochaine échéance. Vu la nature numérique du Service, les sommes déjà payées pour la période en cours ne sont en principe pas remboursables."
+      },
+      {
+        "k": "Configuration",
+        "v": "Un navigateur web moderne est recommandé."
+      }
+    ],
+    "termsNote": "Remarque : remplacez les éléments entre parenthèses par vos informations avant le lancement."
+  }
+}
