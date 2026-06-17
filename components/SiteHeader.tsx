@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { useState, useEffect } from "react";
 import { Plane, ShieldCheck, Info, BedDouble, Languages, Sparkles } from "lucide-react";
 import { LOCALES, BRAND, type Locale } from "@/lib/config";
+import { isNativeApp } from "@/lib/platform";
 
 const LANG_LABEL: Record<Locale, string> = {
   ja: "日本語",
@@ -18,6 +20,10 @@ export function SiteHeader({ locale }: { locale: Locale }) {
   const pathname = usePathname();
   const router = useRouter();
 
+  // アプリ(Capacitor)版ではプレミアム導線を隠す(ストア審査対策)
+  const [native, setNative] = useState(false);
+  useEffect(() => { setNative(isNativeApp()); }, []);
+
   // 現在のパスからロケール部分を除いた残り(言語切替時に同じページを維持)
   const rest = pathname.replace(new RegExp(`^/(${LOCALES.join("|")})`), "") || "";
 
@@ -30,7 +36,8 @@ export function SiteHeader({ locale }: { locale: Locale }) {
     { href: `/${locale}/hotels`, label: t("nav.hotels"), icon: <BedDouble size={14} /> },
     { href: `/${locale}/vpn`, label: t("nav.vpn"), icon: <ShieldCheck size={14} /> },
     { href: `/${locale}/how`, label: t("nav.how"), icon: <Info size={14} /> },
-    { href: `/${locale}/premium`, label: t("nav.premium"), icon: <Sparkles size={14} /> },
+    // プレミアム(課金)はWebのみ。アプリではApp Store/Google Play規約のため非表示
+    ...(native ? [] : [{ href: `/${locale}/premium`, label: t("nav.premium"), icon: <Sparkles size={14} /> }]),
   ];
 
   const isActive = (href: string) => pathname === href;

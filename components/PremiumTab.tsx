@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Crown, BellRing, RefreshCw, LineChart, Sparkles, Check } from "lucide-react";
 import { PRICING, type Locale } from "@/lib/config";
 import { billingCurrency } from "@/lib/format";
+import { isNativeApp } from "@/lib/platform";
 
 export function PremiumTab({ locale }: { locale: Locale }) {
   const t = useTranslations();
@@ -12,6 +13,10 @@ export function PremiumTab({ locale }: { locale: Locale }) {
   const [plan, setPlan] = useState<"monthly" | "yearly">("yearly");
   const [loading, setLoading] = useState(false);
   const [notice, setNotice] = useState("");
+  const [native, setNative] = useState(false);
+
+  // アプリ(Capacitor)判定。アプリ版では課金UIを出さない(ストア審査対策)
+  useEffect(() => { setNative(isNativeApp()); }, []);
 
   // ?checkout=success / cancelled のフィードバック
   useEffect(() => {
@@ -50,6 +55,18 @@ export function PremiumTab({ locale }: { locale: Locale }) {
       setLoading(false);
     }
   };
+
+  // アプリ版では課金機能を表示しない。コア機能(価格比較)はそのまま使えるため、
+  // 利用者にはWeb版での申込みを案内するのみ(リンクは張らない=規約準拠)。
+  if (native) {
+    return (
+      <main className="max-w-3xl mx-auto px-4 pb-20 pt-16 text-center">
+        <Sparkles size={22} style={{ color: "#5AC8E8", margin: "0 auto" }} />
+        <h1 className="font-display mt-4" style={{ fontSize: "clamp(20px,4vw,28px)", color: "#E9EEF8" }}>{t("premium.title")}</h1>
+        <p className="mt-3 text-sm" style={{ color: "#97A3BC", maxWidth: 420, margin: "12px auto 0" }}>{t("premium.sub")}</p>
+      </main>
+    );
+  }
 
   return (
     <main className="max-w-3xl mx-auto px-4 pb-20 pt-10">

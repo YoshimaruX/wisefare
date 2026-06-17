@@ -11,7 +11,7 @@ const TERM_KEY: Record<string, string> = {
   sfs: "vpn.termSfs", pia: "vpn.termPia", exp: "vpn.termExp", nrd: "vpn.termNrd", ptn: "vpn.termPtn",
 };
 
-export function VpnTab({ locale }: { locale: Locale }) {
+export function VpnTab({ locale, affiliateUrls = {} }: { locale: Locale; affiliateUrls?: Record<string, string> }) {
   const t = useTranslations();
   const fmt = useMemo(() => makeFormatter(locale), [locale]);
   const [sort, setSort] = useState<"long" | "single">("long");
@@ -21,9 +21,15 @@ export function VpnTab({ locale }: { locale: Locale }) {
   const bestLong = Math.min(...VPNS.map((v) => v.long));
   const bestSingle = Math.min(...VPNS.map((v) => v.single));
 
-  const showToast = () => {
-    setToast(t("toast.aff"));
-    setTimeout(() => setToast(""), 2800);
+  // アフィリエイトリンクが設定済みなら新しいタブで開く。未設定ならデモ表示。
+  const handleOfficial = (vpnId: string) => {
+    const url = affiliateUrls[vpnId];
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    } else {
+      setToast(t("toast.aff"));
+      setTimeout(() => setToast(""), 2800);
+    }
   };
 
   return (
@@ -58,7 +64,7 @@ export function VpnTab({ locale }: { locale: Locale }) {
               <span><Check size={12} className="inline" style={{ color: "#46D39A" }} /> {v.dev === "unl" ? t("vpn.devUnl") : t("vpn.dev", { n: v.dev })}</span>
               <span><Check size={12} className="inline" style={{ color: "#46D39A" }} /> {t("vpn.refund")}</span>
             </div>
-            <button className="wf-btn-ghost w-full mt-4 justify-center" onClick={showToast}>{t("vpn.official")} <ExternalLink size={14} /></button>
+            <button className="wf-btn-ghost w-full mt-4 justify-center" onClick={() => handleOfficial(v.id)}>{t("vpn.official")} <ExternalLink size={14} /></button>
           </div>
         ))}
       </div>
