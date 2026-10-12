@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft } from "lucide-react";
-import type { Locale } from "@/lib/config";
+import { pageAlternates } from "@/lib/seo";
+import { BRAND, type Locale } from "@/lib/config";
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }) {
   const t = await getTranslations({ locale: params.locale, namespace: "legal" });
-  return { title: t("privacyTitle") };
+  return { title: `${t("privacyTitle")} | ${BRAND.name}`, alternates: pageAlternates(params.locale, "/legal/privacy") };
 }
 
 export default async function PrivacyPage({ params }: { params: { locale: Locale } }) {

@@ -22,10 +22,6 @@ export async function generateMetadata({
     metadataBase: new URL(url),
     title: t("titleHome"),
     description: t("descHome"),
-    alternates: {
-      canonical: `/${params.locale}`,
-      languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}`])),
-    },
     openGraph: {
       title: t("titleHome"),
       description: t("descHome"),

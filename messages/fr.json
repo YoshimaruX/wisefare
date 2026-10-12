@@ -62,7 +62,7 @@
   },
   "toast": {
     "book": "Démo : les liens de réservation seront ajoutés au lancement.",
-    "aff": "Démo : les liens d'affiliation seront ajoutés au lancement."
+    "aff": "Le lien de ce VPN n'est pas encore disponible"
   },
   "top10": {
     "title": "Top 10 le moins cher (analyse mondiale)",
@@ -80,7 +80,7 @@
     "long": "Déjà abonné longue durée (ex. {name} {price}/mois) ? Surcoût quasi nul → {amt} d'économie. Frais de carte étrangère (≈1,6–2,2 %) non inclus."
   },
   "vpn": {
-    "intro": "Comparatif des principaux VPN pour réserver ses voyages. Prix approximatifs, juin 2026 (variables selon promos et change).",
+    "intro": "Comparatif de VPN pour réserver ses voyages. Prix approximatifs, juin 2026 (variables selon promos et change). Vérifiez les tarifs actuels sur chaque site officiel.",
     "sortLong": "Longue durée la moins chère",
     "sortSingle": "Mensuel le moins cher",
     "colLong": "Longue durée",
@@ -94,10 +94,8 @@
     "tagLong": "Longue durée la moins chère",
     "tagSingle": "Mensuel avantageux",
     "termSfs": "27 mois d'avance",
-    "termPia": "26 mois d'avance",
-    "termExp": "24 mois (promo)",
     "termNrd": "24+4 mois",
-    "termPtn": "24 mois d'avance"
+    "disclosure": "[Publicité] Les liens « Site officiel » sont des liens d'affiliation. Si vous vous abonnez via ces liens, nous pouvons percevoir une commission, sans surcoût pour vous. Nous ne présentons que les VPN partenaires, classés par prix."
   },
   "how": {
     "step1t": "1. Scanner le monde",
@@ -177,7 +175,8 @@
     "privacy": "Confidentialité",
     "terms": "Mentions légales",
     "contact": "Contact",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "affiliate": "Ce site participe à des programmes d'affiliation ; les liens vers les services VPN sont de la publicité."
   },
   "common": {
     "close": "Fermer",

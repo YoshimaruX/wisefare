@@ -62,7 +62,7 @@
   },
   "toast": {
     "book": "Demo: outbound booking links are added at launch.",
-    "aff": "Demo: affiliate links are added at launch."
+    "aff": "The link for this VPN is not available yet"
   },
   "top10": {
     "title": "Top 10 cheapest (world scan)",
@@ -80,7 +80,7 @@
     "long": "Already on a long-term plan (e.g. {name} {price}/mo)? Near-zero extra cost → save {amt}. Foreign-card fees (≈1.6–2.2%) not included."
   },
   "vpn": {
-    "intro": "Price comparison of major VPNs for travel booking. Approx. prices as of June 2026 (vary with sales & FX).",
+    "intro": "Price comparison of VPNs for travel booking. Approx. prices as of June 2026 (vary with sales & FX). Check each official site for current pricing.",
     "sortLong": "Cheapest long-term",
     "sortSingle": "Cheapest monthly",
     "colLong": "Long-term",
@@ -94,10 +94,8 @@
     "tagLong": "Cheapest long-term",
     "tagSingle": "Best monthly value",
     "termSfs": "27-mo upfront",
-    "termPia": "26-mo upfront",
-    "termExp": "24-mo (sale)",
     "termNrd": "24+4 mo",
-    "termPtn": "24-mo upfront"
+    "disclosure": "[Ad] “Official site” links are affiliate links. If you sign up through them, we may earn a commission at no extra cost to you. We list only VPNs we partner with, ordered by price."
   },
   "how": {
     "step1t": "1. Scan the world",
@@ -177,7 +175,8 @@
     "privacy": "Privacy Policy",
     "terms": "Terms",
     "contact": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "affiliate": "This site takes part in affiliate programs; links to VPN services are advertising."
   },
   "common": {
     "close": "Close",

@@ -9,8 +9,8 @@
 export const BRAND = {
   /** 表示名。ここを変えると全ページのロゴ・タイトルが変わります */
   name: "Wisefare",
-  /** ドメイン(本番のものに差し替え) */
-  domain: "wisefare.app",
+  /** ドメイン。独自ドメインを取得したら、ここをそのドメインに書き換える */
+  domain: "wisefare.vercel.app",
   /** 連絡先メール(特商法表記・問い合わせ用) */
   email: "support@wisefare.app",
   /** タグライン(言語別の訳は messages/*.json 側で管理) */

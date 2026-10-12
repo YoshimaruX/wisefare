@@ -1,18 +1,19 @@
-import { setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { VpnTab } from "@/components/VpnTab";
-import { VPNS } from "@/lib/data";
-import type { Locale } from "@/lib/config";
+import { getAffiliateUrls } from "@/lib/affiliate";
+import { pageAlternates } from "@/lib/seo";
+import { BRAND, type Locale } from "@/lib/config";
+
+export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: "nav" });
+  return {
+    title: `${t("vpn")} | ${BRAND.name}`,
+    alternates: pageAlternates(params.locale, "/vpn"),
+  };
+}
 
 export default function VpnPage({ params }: { params: { locale: Locale } }) {
   setRequestLocale(params.locale);
-
-  // 各VPNのアフィリエイトURLを環境変数から読み取り、{id: url} の形にする。
-  // 未設定のものは空文字。これをクライアントに渡すことで、
-  // 設定済みなら実リンクへ遷移、未設定ならデモ表示、と自動で切り替わる。
-  const affiliateUrls: Record<string, string> = {};
-  for (const v of VPNS) {
-    affiliateUrls[v.id] = process.env[v.affiliateUrlEnv] ?? "";
-  }
-
-  return <VpnTab locale={params.locale} affiliateUrls={affiliateUrls} />;
+  return <VpnTab locale={params.locale} affiliateUrls={getAffiliateUrls()} />;
 }

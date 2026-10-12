@@ -149,10 +149,12 @@ export interface Vpn {
   affiliateUrlEnv: string;
 }
 
+/**
+ * 掲載するVPN。アフィリエイト提携済みのものだけを載せています。
+ * 新しく提携したら、ここに1行追加し、Vercelの環境変数にリンクを登録してください。
+ * (過去に掲載していた PIA / ExpressVPN / Proton VPN は未提携のため外しました)
+ */
 export const VPNS: Vpn[] = [
-  { id: "sfs", name: "Surfshark",  long: 300, single: 2320, countries: 100, dev: "unl", refund: 30, tag: "long",   affiliateUrlEnv: "AFF_SURFSHARK" },
-  { id: "pia", name: "PIA",        long: 330, single: 1790, countries: 91,  dev: "unl", refund: 30,                affiliateUrlEnv: "AFF_PIA" },
-  { id: "exp", name: "ExpressVPN", long: 370, single: 1940, countries: 105, dev: "8",   refund: 30,                affiliateUrlEnv: "AFF_EXPRESSVPN" },
-  { id: "nrd", name: "NordVPN",    long: 440, single: 1950, countries: 126, dev: "10",  refund: 30,                affiliateUrlEnv: "AFF_NORDVPN" },
-  { id: "ptn", name: "Proton VPN", long: 450, single: 1500, countries: 112, dev: "10",  refund: 30, tag: "single", affiliateUrlEnv: "AFF_PROTONVPN" },
+  { id: "sfs", name: "Surfshark", long: 300, single: 2320, countries: 100, dev: "unl", refund: 30, tag: "long",   affiliateUrlEnv: "AFF_SURFSHARK" },
+  { id: "nrd", name: "NordVPN",   long: 440, single: 1950, countries: 126, dev: "10",  refund: 30, tag: "single", affiliateUrlEnv: "AFF_NORDVPN" },
 ];

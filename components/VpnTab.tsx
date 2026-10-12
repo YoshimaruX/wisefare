@@ -8,7 +8,7 @@ import { makeFormatter } from "@/lib/format";
 import type { Locale } from "@/lib/config";
 
 const TERM_KEY: Record<string, string> = {
-  sfs: "vpn.termSfs", pia: "vpn.termPia", exp: "vpn.termExp", nrd: "vpn.termNrd", ptn: "vpn.termPtn",
+  sfs: "vpn.termSfs", nrd: "vpn.termNrd",
 };
 
 export function VpnTab({ locale, affiliateUrls = {} }: { locale: Locale; affiliateUrls?: Record<string, string> }) {
@@ -21,15 +21,10 @@ export function VpnTab({ locale, affiliateUrls = {} }: { locale: Locale; affilia
   const bestLong = Math.min(...VPNS.map((v) => v.long));
   const bestSingle = Math.min(...VPNS.map((v) => v.single));
 
-  // アフィリエイトリンクが設定済みなら新しいタブで開く。未設定ならデモ表示。
-  const handleOfficial = (vpnId: string) => {
-    const url = affiliateUrls[vpnId];
-    if (url) {
-      window.open(url, "_blank", "noopener,noreferrer");
-    } else {
-      setToast(t("toast.aff"));
-      setTimeout(() => setToast(""), 2800);
-    }
+  // アフィリエイトリンク未設定のVPNは、押すと「準備中」のお知らせを出す。
+  const showNoLink = () => {
+    setToast(t("toast.aff"));
+    setTimeout(() => setToast(""), 2800);
   };
 
   return (
@@ -64,10 +59,15 @@ export function VpnTab({ locale, affiliateUrls = {} }: { locale: Locale; affilia
               <span><Check size={12} className="inline" style={{ color: "#46D39A" }} /> {v.dev === "unl" ? t("vpn.devUnl") : t("vpn.dev", { n: v.dev })}</span>
               <span><Check size={12} className="inline" style={{ color: "#46D39A" }} /> {t("vpn.refund")}</span>
             </div>
-            <button className="wf-btn-ghost w-full mt-4 justify-center" onClick={() => handleOfficial(v.id)}>{t("vpn.official")} <ExternalLink size={14} /></button>
+            {affiliateUrls[v.id] ? (
+              <a className="wf-btn-amber w-full mt-4 justify-center" href={affiliateUrls[v.id]} target="_blank" rel="sponsored noopener noreferrer">{t("vpn.official")} <ExternalLink size={14} /></a>
+            ) : (
+              <button className="wf-btn-ghost w-full mt-4 justify-center" onClick={showNoLink}>{t("vpn.official")} <ExternalLink size={14} /></button>
+            )}
           </div>
         ))}
       </div>
+      <p className="text-xs mt-5" style={{ color: "#6B7790" }}>{t("vpn.disclosure")}</p>
       {toast && <div className="wf-toast">{toast}</div>}
     </main>
   );

@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft } from "lucide-react";
-import type { Locale } from "@/lib/config";
+import { pageAlternates } from "@/lib/seo";
+import { BRAND, type Locale } from "@/lib/config";
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }) {
   const t = await getTranslations({ locale: params.locale, namespace: "legal" });
-  return { title: t("termsTitle") };
+  return { title: `${t("termsTitle")} | ${BRAND.name}`, alternates: pageAlternates(params.locale, "/legal/terms") };
 }
 
 export default async function TermsPage({ params }: { params: { locale: Locale } }) {

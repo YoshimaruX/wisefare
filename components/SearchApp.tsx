@@ -12,16 +12,24 @@ import type { Locale } from "@/lib/config";
 import type { ScanResult, SearchKind } from "@/lib/scan";
 import { StepsModal, RisksModal } from "./Modals";
 
-interface Props { locale: Locale; kind: SearchKind }
+interface Props { locale: Locale; kind: SearchKind; affiliateUrls?: Record<string, string> }
 
 type Query =
   | { kind: "flight"; fromCountry: string; fromAirport: string; toCountry: string; toAirport: string; dep: string; ret: string; pax: number }
   | { kind: "hotel"; hotelCountry: string; hotelCity: string; hname: string; cin: string; cout: string; n: number; guests: number };
 
+/** 今日から days 日後の日付を YYYY-MM-DD で返す(検索フォームの初期値用) */
+const dateFromToday = (days: number) => {
+  const d = new Date();
+  d.setDate(d.getDate() + days);
+  const p = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+};
+
 const nightsBetween = (a: string, b: string) =>
   Math.max(1, Math.round((+new Date(b) - +new Date(a)) / 86400000) || 1);
 
-export function SearchApp({ locale, kind }: Props) {
+export function SearchApp({ locale, kind, affiliateUrls = {} }: Props) {
   const t = useTranslations();
   const fmt = useMemo(() => makeFormatter(locale), [locale]);
   const rn = useCallback((code: string) => CTRY(code).nm[locale], [locale]);
@@ -44,17 +52,23 @@ export function SearchApp({ locale, kind }: Props) {
   const [fromAirport, setFromAirport] = useState("NRT");
   const [toCountry, setToCountry] = useState("FR");
   const [toAirport, setToAirport] = useState("CDG");
-  const [dep, setDep] = useState("2026-09-12");
-  const [ret, setRet] = useState("2026-09-20");
+  const [dep, setDep] = useState("");
+  const [ret, setRet] = useState("");
   const [pax, setPax] = useState(1);
 
   // hotel
   const [hotelCountry, setHotelCountry] = useState("FR");
   const [hotelCity, setHotelCity] = useState("Paris");
   const [hname, setHname] = useState("");
-  const [cin, setCin] = useState("2026-09-12");
-  const [cout, setCout] = useState("2026-09-15");
+  const [cin, setCin] = useState("");
+  const [cout, setCout] = useState("");
   const [guests, setGuests] = useState(2);
+
+  // 日付の初期値は「今日から約1か月後」。過去の日付にならないよう、画面を開いた時点で計算する。
+  useEffect(() => {
+    setDep(dateFromToday(30)); setRet(dateFromToday(38));
+    setCin(dateFromToday(30)); setCout(dateFromToday(33));
+  }, []);
 
   useEffect(() => { setFromAirport(AIRPORTS[fromCountry][0][0]); }, [fromCountry]);
   useEffect(() => { setToAirport(AIRPORTS[toCountry][0][0]); }, [toCountry]);
@@ -202,7 +216,7 @@ export function SearchApp({ locale, kind }: Props) {
         {scanning && <Scanner progress={progress} t={t} />}
         {!scanning && r && (
           <>
-            <BoardingPass r={r} label={queryLabel()} t={t} fmt={fmt} rn={rn}
+            <BoardingPass r={r} label={queryLabel()} t={t} fmt={fmt} rn={rn} vpnUrl={affiliateUrls[r.vpnSingle.id] ?? ""}
               onSteps={() => setSteps(true)} onRisk={() => setRisk(true)} onToast={() => setToast(t("toast.book"))} />
             <div className="grid lg:grid-cols-2 gap-4">
               <TopTen r={r} t={t} fmt={fmt} rn={rn} />
@@ -244,8 +258,8 @@ function Barcode({ seed }: { seed: number }) {
   );
 }
 
-function BoardingPass({ r, label, t, fmt, rn, onSteps, onRisk, onToast }: {
-  r: ScanResult; label: string; t: TT; fmt: Fmt; rn: Rn;
+function BoardingPass({ r, label, t, fmt, rn, vpnUrl, onSteps, onRisk, onToast }: {
+  r: ScanResult; label: string; t: TT; fmt: Fmt; rn: Rn; vpnUrl: string;
   onSteps: () => void; onRisk: () => void; onToast: () => void;
 }) {
   const isHomeBest = r.best.c === r.homeCode;
@@ -288,6 +302,9 @@ function BoardingPass({ r, label, t, fmt, rn, onSteps, onRisk, onToast }: {
               <p className="text-xs" style={{ color: "#97A3BC" }}>{t("result.netLabel")}</p>
               <p className="num text-2xl font-bold" style={{ color: r.net > 0 ? "#46D39A" : "#F47174" }}>{r.net > 0 ? "+" : ""}{fmt(r.net)}</p>
             </div>
+            {vpnUrl && (
+              <a className="wf-btn-amber w-full mt-4 justify-center" href={vpnUrl} target="_blank" rel="sponsored noopener noreferrer">{t("vpn.official")} <ExternalLink size={14} /></a>
+            )}
           </>
         )}
         <div className="mt-4"><Barcode seed={seed} /></div>
