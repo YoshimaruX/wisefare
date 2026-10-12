@@ -11,8 +11,12 @@ export const BRAND = {
   name: "Wisefare",
   /** ドメイン。独自ドメインを取得したら、ここをそのドメインに書き換える */
   domain: "wisefare.vercel.app",
-  /** 連絡先メール(特商法表記・問い合わせ用) */
-  email: "support@wisefare.app",
+  /**
+   * お問い合わせページのURL(Googleフォームなど)。
+   * 空のあいだはフッターに「お問い合わせ」リンクを出しません。
+   * フォームを作ったら、ここにそのURLを貼るだけでリンクが表示されます。
+   */
+  contactUrl: "",
   /** タグライン(言語別の訳は messages/*.json 側で管理) */
   taglineKey: "tagline",
 } as const;

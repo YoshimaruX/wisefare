@@ -14,7 +14,9 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
         <div className="flex items-center gap-4 mt-4 flex-wrap text-xs">
           <Link href={`/${locale}/legal/privacy`} style={{ color: "#97A3BC" }}>{t("privacy")}</Link>
           <Link href={`/${locale}/legal/terms`} style={{ color: "#97A3BC" }}>{t("terms")}</Link>
-          <a href={`mailto:${BRAND.email}`} style={{ color: "#97A3BC" }}>{t("contact")}</a>
+          {BRAND.contactUrl && (
+            <a href={BRAND.contactUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#97A3BC" }}>{t("contact")}</a>
+          )}
           <span style={{ color: "#3C485E", marginLeft: "auto" }}>© {year} {BRAND.name}. {t("rights")}</span>
         </div>
       </div>

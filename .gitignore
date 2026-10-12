@@ -29,3 +29,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Claudeのプレビュー画像など(GitHubには含めない)
+/Claude outputs/
